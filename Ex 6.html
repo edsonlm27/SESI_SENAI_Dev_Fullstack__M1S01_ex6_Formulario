@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>[M1S01] Ex 6 - [Formulário] Criação de formulário</h1>
+    <form action="">
+      <fieldset>
+        <label for="nome">Nome: </label><br />
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite o seu nome completo"
+          required="required"
+        /><br /><br />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          placeholder="Digite o seu e-mail"
+          required="required"
+          name="email"
+          id="email"
+        /><br /><br />
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" min="10" max="99" />
+        <br /><br />
+
+        <label for="data-nascimento">Data de Nascimento</label>
+        <input type="date" name="data-nascimento" id="data-nascimento" />
+        <br /><br />
+
+        <label for="agendamento">Agendamento</label>
+        <input type="datetime-local" name="agendamento" id="agendamento" />
+        <br /><br />
+
+        <label for="hora-despertador">Hora despertador</label>
+        <input
+          type="time"
+          name="hora-despertador"
+          id="hora-despertador"
+        /><br /><br />
+
+        <label>Gênero de filme favorito:</label><br />
+        <input type="radio" name="genero-filme" id="comedia" value="comedia" />
+        <label for="comedia">Comédia</label> <br />
+        <input type="radio" name="genero-filme" id="acao" value="acao" />
+        <label for="acao">Ação</label> <br />
+        <input type="radio" name="genero-filme" id="terror" value="terror" />
+        <label for="terror">Terror</label> <br /><br />
+
+        <label>Cores favoritas:</label> <br />
+
+        <input
+          type="checkbox"
+          name="cores-favoritas"
+          id="amarelo"
+          value="amarelo"
+        />
+        <label for="amarelo">Amarelo</label> <br />
+
+        <input
+          type="checkbox"
+          name="cores-favoritas"
+          id="vermelho"
+          value="vermelho"
+        />
+        <label for="vermelho">Vermelho</label> <br />
+
+        <input type="checkbox" name="cores-favoritas" id="azul" value="azul" />
+        <label for="azul"> Azul</label> <br />
+
+        <label for="cor-preferida">Cor preferida: </label>
+        <input
+          type="color"
+          name="cor-preferida"
+          id="cor-preferida"
+          value="#ff0000"
+        />
+        <br /><br />
+
+        <input
+          type="file"
+          name="foto"
+          id="foto"
+          accept="image/png, image/jpeg"
+        />
+        <br /><br />
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
